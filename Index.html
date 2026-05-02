@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BENESEBOXRD - Taller Mecánico</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="icon" type="image/png" href="assets/img/logos/logo.png">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&family=Barlow:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="CSS/variables.css">
+  <link rel="stylesheet" href="CSS/components.css">
+  <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a href="#" class="logo">BENESEBOX<span>RD</span></a>
+    <ul class="nav-links">
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#nosotros">Nosotros</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+    <a href="lubricentro.html" class="nav-cta">
+      Lubricentro
+    </a>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner">
+      <p class="hero-eyebrow">Taller Mecánico Integral</p>
+      <h1>
+        Tu auto en<br>
+        <span class="line-red">manos expertas</span>
+      </h1>
+      <p class="hero-sub">
+        Mecánica general, service, frenos, suspensión y lubricentro completo. Más de 15 años brindando calidad y confianza a cada vehículo.
+      </p>
+      <div class="hero-buttons">
+        <a href="https://api.whatsapp.com/send/?phone=5491171561240&text=Hola%21+Necesito+turno+en+el+taller.&type=phone_number&app_absent=0" target="_blank" class="btn-primary">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Pedir turno por WhatsApp
+        </a>
+        <a href="#" onclick="document.getElementById('horarios-modal').classList.add('open'); return false;" class="btn-secondary">Ver horarios</a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat">
+          <div class="stat-number">15+</div>
+          <div class="stat-label">Años de experiencia</div>
+        </div>
+        <div class="stat">
+          <div class="stat-number">3.200+</div>
+          <div class="stat-label">Autos atendidos</div>
+        </div>
+        <div class="stat">
+          <div class="stat-number">100%</div>
+          <div class="stat-label">Satisfacción garantizada</div>
+        </div>
+        <div class="stat">
+          <div class="stat-number">Lun–Sáb</div>
+          <div class="stat-label">Días hábiles</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICIOS -->
+  <section id="servicios">
+    <div class="services-header">
+      <div>
+        <p class="section-label">Lo que hacemos</p>
+        <h2 class="section-title">Servicios del Taller</h2>
+      </div>
+      <p class="section-desc">Contamos con equipamiento de diagnóstico de última generación y mecánicos certificados para todo tipo de vehículo.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card">
+        <span class="service-icon"></span>
+        <div class="service-name">Mecánica General</div>
+        <p class="service-desc">Reparación de motor, distribución, embrague, transmisión y todos los sistemas mecánicos del vehículo.</p>
+      </div>
+      <div class="service-card">
+        <span class="service-icon"></span>
+        <div class="service-name">Frenos & Suspensión</div>
+        <p class="service-desc">Pastillas, discos, amortiguadores, rótulas y alineación de cuatro ruedas con maquinaria computarizada.</p>
+      </div>
+      <div class="service-card">
+        <span class="service-icon"></span>
+        <div class="service-name">Electricidad & Diagnóstico</div>
+        <p class="service-desc">Escáner de fallas, sistema de encendido, alternadores, arranque y toda la instalación eléctrica del auto.</p>
+      </div>
+      
+      <div class="service-card">
+        <span class="service-icon"></span>
+        <div class="service-name">Service & Lubricación</div>
+        <p class="service-desc">Cambio de aceite, filtros, líquido de frenos y refrigerante. Service express sin turno previo.</p>
+      </div>
+      <div class="service-card">
+        <span class="service-icon"></span>
+        <div class="service-name">Pre-Compra y VTV</div>
+        <p class="service-desc">Revisión integral antes de comprar un usado. Preparación para la Verificación Técnica Vehicular.</p>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- NOSOTROS -->
+  <section id="nosotros">
+    <div class="why-inner">
+      <div>
+        <p class="section-label">Por qué elegirnos</p>
+        <h2 class="section-title">Confianza que se siente desde el primer minuto</h2>
+        <p class="section-desc">No somos un taller más. Somos el equipo que cuida tu auto como si fuera el nuestro.</p>
+        <div class="why-features">
+          <div class="feature-row">
+            <div class="feature-num">01</div>
+            <div class="feature-text">
+              <h4>Diagnóstico Transparente</h4>
+              <p>Te explicamos qué le pasa al auto antes de arrancar. Sin sorpresas en la factura final.</p>
+            </div>
+          </div>
+          <div class="feature-row">
+            <div class="feature-num">02</div>
+            <div class="feature-text">
+              <h4>Repuestos Originales y OEM</h4>
+              <p>Usamos solo piezas de calidad certificada. Tu seguridad no es negociable.</p>
+            </div>
+          </div>
+          <div class="feature-row">
+            <div class="feature-num">03</div>
+            <div class="feature-text">
+              <h4>Garantía por Escrito</h4>
+              <p>Todos nuestros trabajos tienen garantía firmada. Si algo falla, lo resolvemos sin costo de mano de obra.</p>
+            </div>
+          </div>
+          <div class="feature-row">
+            <div class="feature-num">04</div>
+            <div class="feature-text">
+              <h4>Atención Personalizada por WhatsApp</h4>
+              <p>Te avisamos el estado del trabajo en tiempo real. Sabés exactamente qué está pasando con tu vehículo.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="why-visual" style="padding:40px 40px 36px;">
+        <p class="section-label" style="margin-bottom:10px;">Trabajamos con especialistas</p>
+        <p style="font-size:0.88rem; color:var(--gray-light); line-height:1.65; margin-bottom:28px;">
+          En BENESEBOXRD colaboramos con profesionales independientes que operan dentro de nuestro taller, ofreciendo servicios especializados de alto nivel.
+        </p>
+
+        <!-- Underground card -->
+        <div style="border:1px solid rgba(255,255,255,0.1); padding:24px; position:relative; overflow:hidden;">
+          <div style="position:absolute; top:0; left:0; width:3px; height:100%; background:var(--red);"></div>
+          <div style="font-family:'Barlow Condensed',sans-serif; font-weight:900; font-size:1.5rem; text-transform:uppercase; letter-spacing:0.04em; color:var(--white); line-height:1; margin-bottom:4px;">UNDERGROUND</div>
+          <div style="font-family:'Barlow Condensed',sans-serif; font-weight:600; font-size:0.85rem; letter-spacing:0.2em; text-transform:uppercase; color:var(--gray-light); margin-bottom:14px;">Detail Industry</div>
+          <p style="font-size:0.84rem; color:var(--gray-light); line-height:1.6; margin-bottom:22px;">Detailing profesional, PPF, pulidos y tratamientos para vehículos de alta gama. Operan dentro de nuestro taller.</p>
+          <div style="display:flex; gap:12px; flex-wrap:wrap;">
+            <button onclick="document.getElementById('underground-modal').style.display='flex'" style="background:var(--red); color:var(--white); border:none; padding:10px 20px; font-family:'Barlow Condensed',sans-serif; font-weight:700; font-size:0.85rem; letter-spacing:0.1em; text-transform:uppercase; cursor:pointer; transition:background 0.2s; clip-path:polygon(0 0, calc(100% - 8px) 0, 100% 100%, 8px 100%);">
+              Ver detailing
+            </button>
+            <a href="https://www.instagram.com/undergroundetail?igsh=YjBzYnUzNGp2b2tl" target="_blank" style="background:transparent; color:var(--white); border:1px solid rgba(255,255,255,0.2); padding:10px 20px; font-family:'Barlow Condensed',sans-serif; font-weight:700; font-size:0.85rem; letter-spacing:0.1em; text-transform:uppercase; text-decoration:none; display:inline-flex; align-items:center; gap:7px; transition:border-color 0.2s; clip-path:polygon(0 0, calc(100% - 8px) 0, 100% 100%, 8px 100%);">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+              Instagram
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- MODAL Underground -->
+      <div id="underground-modal" onclick="if(event.target===this)this.style.display='none'" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.85); z-index:9999; align-items:center; justify-content:center; padding:24px;">
+        <div style="background:var(--dark2); border:1px solid rgba(255,255,255,0.1); max-width:480px; width:100%; position:relative; overflow:hidden;">
+          <div style="position:absolute; top:0; left:0; right:0; height:3px; background:var(--red);"></div>
+          <div style="padding:36px 36px 28px;">
+            <button onclick="document.getElementById('underground-modal').style.display='none'" style="position:absolute; top:20px; right:20px; background:none; border:none; color:var(--gray-light); font-size:1.4rem; cursor:pointer; line-height:1;">✕</button>
+            <div style="font-family:'Barlow Condensed',sans-serif; font-weight:900; font-size:2rem; text-transform:uppercase; letter-spacing:0.04em; color:var(--white); line-height:1;">UNDERGROUND</div>
+            <div style="font-family:'Barlow Condensed',sans-serif; font-weight:600; font-size:0.8rem; letter-spacing:0.25em; text-transform:uppercase; color:var(--red); margin-bottom:24px; margin-top:2px;">Detail Industry</div>
+            <p class="section-label" style="margin-bottom:16px;">Servicios disponibles</p>
+            <ul style="list-style:none; display:flex; flex-direction:column; gap:10px; margin-bottom:28px;">
+              <li style="display:flex; align-items:center; gap:10px; font-size:0.9rem; color:var(--white-soft); border-bottom:1px solid rgba(255,255,255,0.05); padding-bottom:10px;">
+                <span style="color:var(--red); font-size:1rem;">▸</span> Taller de detallado integral
+              </li>
+              <li style="display:flex; align-items:center; gap:10px; font-size:0.9rem; color:var(--white-soft); border-bottom:1px solid rgba(255,255,255,0.05); padding-bottom:10px;">
+                <span style="color:var(--red); font-size:1rem;">▸</span> Servicio de mantenimiento exclusivo
+              </li>
+              <li style="display:flex; align-items:center; gap:10px; font-size:0.9rem; color:var(--white-soft); border-bottom:1px solid rgba(255,255,255,0.05); padding-bottom:10px;">
+                <span style="color:var(--red); font-size:1rem;">▸</span> Preparaciones para la venta
+              </li>
+              <li style="display:flex; align-items:center; gap:10px; font-size:0.9rem; color:var(--white-soft); border-bottom:1px solid rgba(255,255,255,0.05); padding-bottom:10px;">
+                <span style="color:var(--red); font-size:1rem;">▸</span> Abrillantados, pulidos y tratamientos
+              </li>
+              <li style="display:flex; align-items:center; gap:10px; font-size:0.9rem; color:var(--white-soft); border-bottom:1px solid rgba(255,255,255,0.05); padding-bottom:10px;">
+                <span style="color:var(--red); font-size:1rem;">▸</span> Colocación de PPF
+              </li>
+              <li style="display:flex; align-items:center; gap:10px; font-size:0.9rem; color:var(--white-soft);">
+                <span style="color:var(--red); font-size:1rem;">▸</span> Reparación, pintura y diamantado de llantas
+              </li>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA CONTACTO -->
+  <section id="contacto">
+    <div class="contact-inner">
+      <div class="contact-text">
+        <h2>¿Tu auto necesita atención?</h2>
+        <p>Escribinos y te damos turno el mismo día. Lunes a sábado de 8 a 18:30 hs.</p>
+      </div>
+      <div class="contact-actions">
+        <a href="https://wa.me/5491171561240?text=Hola!%20Necesito%20turno%20en%20el%20taller." target="_blank" class="btn-white">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Hablar por WhatsApp
+        </a>
+        <a href="tel:+5491171561240" class="btn-outline-white">
+          Llamar al taller
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#" class="logo">BENESEBOX<span>RD</span></a>
+        <p>Taller mecánico integral y lubricentro en el corazón de Buenos Aires. Calidad, confianza y transparencia en cada trabajo.</p>
+        <a href="https://www.google.com/maps/place/Av.+Constituyentes+834,+General+Pacheco" target="_blank" class="btn-primary" style="font-size:0.82rem; padding:10px 20px;">
+          Cómo llegar
+        </a>
+      </div>
+      <div class="footer-col">
+        <h5>Servicios</h5>
+        <ul>
+          <li><a href="#servicios">Mecánica General</a></li>
+          <li><a href="#servicios">Frenos & Suspensión</a></li>
+          <li><a href="#servicios">Electricidad</a></li>
+          <li><a href="#servicios">Service & Lubricación</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Seguinos</h5>
+        <ul>
+           <li><a href="https://www.instagram.com/beneseboxrd" target="_blank">Instagram</a></li>
+           <li><a href="https://www.tiktok.com/@beneseboxrd?_r=1&_t=ZS-960ANFKC2gT" target="_blank">TikTok</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Contacto</h5>
+        <ul>
+          <li><a href="https://mail.google.com/mail/?view=cm&to=beneseboxrd@gmail.com" target="_blank">Mail</a></li>
+          <li><a href="https://wa.me/5491171561240" target="_blank"> WhatsApp</a></li>
+          <li><a href="#" onclick="document.getElementById('horarios-modal').classList.add('open'); return false;"> Horarios</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 BENESEBOXRD Taller Mecánico. Todos los derechos reservados.</p>
+      <a href="#">Política de privacidad</a>
+    </div>
+  </footer>
+  <!-- MODAL: HORARIOS -->
+<div id="horarios-modal" class="modal-overlay" onclick="if(event.target===this)this.classList.remove('open')">
+  <div class="modal-box">
+    <div class="modal-top-bar"></div>
+    <div class="modal-inner">
+      <button class="modal-close" onclick="document.getElementById('horarios-modal').classList.remove('open')">✕</button>
+      <p class="section-label" style="margin-bottom:6px;">Taller BENESEBOXRD</p>
+      <div style="font-family:'Barlow Condensed',sans-serif; font-weight:900; font-size:2rem; text-transform:uppercase; color:var(--white); line-height:1; margin-bottom:28px;">Horarios de atención</div>
+      <table class="horario-table">
+        <tr><td>Lunes <span class="badge-open">Abierto</span></td><td>08:00 – 18:30 hs</td></tr>
+        <tr><td>Martes <span class="badge-open">Abierto</span></td><td>08:00 – 18:20 hs</td></tr>
+        <tr><td>Miércoles <span class="badge-open">Abierto</span></td><td>08:00 – 18:30 hs</td></tr>
+        <tr><td>Jueves <span class="badge-open">Abierto</span></td><td>08:00 – 18:30 hs</td></tr>
+        <tr><td>Viernes <span class="badge-open">Abierto</span></td><td>08:00 – 18:30 hs</td></tr>
+        <tr><td>Sábado <span class="badge-open">Abierto</span></td><td>08:00 – 13:00 hs</td></tr>
+        <tr><td>Domingo <span class="badge-closed">Cerrado</span></td><td style="color:rgba(255,255,255,0.2);">—</td></tr>
+      </table>
+      <div class="horario-note">
+        Para turnos fuera del horario o consultas urgentes, escribinos por WhatsApp.
+      </div>
+    </div>
+  </div>
+</div>
+  <script>
+  document.querySelectorAll('a[href="lubricentro.html"], a[href="index.html"]').forEach(link => {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      const destino = this.href;
+      document.body.style.opacity = '0';
+      document.body.style.transition = 'opacity 0.1s ease';
+      setTimeout(() => { window.location.href = destino; }, 400);
+     });
+    });
+  </script>
+</body>
+</html>

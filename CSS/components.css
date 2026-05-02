@@ -1,0 +1,200 @@
+/* ── NAV ── */
+nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 48px;
+  height: 72px;
+  background: rgba(10,10,10,0.95);
+  border-bottom: 1px solid rgba(255,255,255,0.07);
+  backdrop-filter: blur(10px);
+}
+
+.logo {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 900;
+  font-size: 1.7rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--white);
+  text-decoration: none;
+}
+.logo span { color: var(--red); }
+
+.nav-links {
+  display: flex;
+  gap: 36px;
+  list-style: none;
+}
+.nav-links a {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--gray-light);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.nav-links a:hover { color: var(--white); }
+
+.nav-cta {
+  background: var(--red);
+  color: var(--white) !important;
+  padding: 10px 22px;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: background 0.2s, transform 0.15s;
+}
+.nav-cta:hover { background: var(--red-dark); transform: translateY(-1px); }
+
+/* ── BOTONES ── */
+.btn-primary {
+  background: var(--red);
+  color: var(--white);
+  padding: 16px 36px;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 800;
+  font-size: 1rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: background 0.2s, transform 0.15s;
+  clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 100%, 10px 100%);
+}
+.btn-primary:hover { background: var(--red-dark); transform: translateY(-2px); }
+
+.btn-secondary {
+  background: transparent;
+  color: var(--white);
+  padding: 15px 36px;
+  border: 1.5px solid rgba(255,255,255,0.25);
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: border-color 0.2s, color 0.2s;
+  clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 100%, 10px 100%);
+}
+.btn-secondary:hover { border-color: var(--white); }
+
+.btn-white {
+  background: var(--white);
+  color: var(--red);
+  padding: 16px 36px;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 800;
+  font-size: 1rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: background 0.2s, transform 0.15s;
+  clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 100%, 10px 100%);
+}
+.btn-white:hover { background: var(--white-soft); transform: translateY(-2px); }
+
+.btn-outline-white {
+  background: transparent;
+  color: var(--white);
+  padding: 15px 36px;
+  border: 2px solid rgba(255,255,255,0.6);
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: border-color 0.2s;
+  clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 100%, 10px 100%);
+}
+.btn-outline-white:hover { border-color: var(--white); }
+
+/* ── MODAL BASE ── */
+.modal-overlay {
+  display: none; position: fixed; inset: 0;
+  background: rgba(0,0,0,0.85); z-index: 9999;
+  align-items: center; justify-content: center; padding: 24px;
+}
+.modal-overlay.open { display: flex; }
+
+.modal-box {
+  background: var(--dark2); border: 1px solid rgba(255,255,255,0.1);
+  max-width: 480px; width: 100%; position: relative; overflow: hidden;
+}
+.modal-top-bar { position: absolute; top: 0; left: 0; right: 0; height: 3px; background: var(--red); }
+.modal-inner { padding: 40px 36px 36px; }
+.modal-close {
+  position: absolute; top: 18px; right: 18px;
+  background: none; border: none; color: var(--gray-light);
+  font-size: 1.4rem; cursor: pointer; line-height: 1; transition: color 0.2s;
+}
+.modal-close:hover { color: var(--white); }
+
+/* ── MODAL HORARIOS ── */
+.horario-table { width: 100%; border-collapse: collapse; margin-top: 8px; }
+.horario-table tr { border-bottom: 1px solid rgba(255,255,255,0.05); }
+.horario-table tr:last-child { border-bottom: none; }
+.horario-table td { padding: 12px 0; font-size: 0.9rem; vertical-align: middle; }
+.horario-table td:first-child {
+  color: var(--white); font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 700; font-size: 1rem; text-transform: uppercase; letter-spacing: 0.06em;
+}
+.horario-table td:last-child { color: var(--gray-light); text-align: right; }
+
+.badge-open {
+  display: inline-block; background: rgba(232,0,29,0.15); color: var(--red);
+  font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 0.65rem;
+  letter-spacing: 0.15em; text-transform: uppercase; padding: 2px 8px;
+  margin-left: 8px; vertical-align: middle;
+}
+.badge-closed {
+  display: inline-block; background: rgba(255,255,255,0.06); color: var(--gray-light);
+  font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 0.65rem;
+  letter-spacing: 0.15em; text-transform: uppercase; padding: 2px 8px;
+  margin-left: 8px; vertical-align: middle;
+}
+.horario-note {
+  margin-top: 20px; padding: 14px 16px;
+  background: rgba(232,0,29,0.07); border-left: 3px solid var(--red);
+  font-size: 0.82rem; color: var(--gray-light); line-height: 1.6;
+}
+
+/* ── ANIMACIONES ── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes pulse-ring {
+  0%   { transform: scale(0.9); opacity: 1; }
+  100% { transform: scale(1.4); opacity: 0; }
+}
+
+.hero-eyebrow { animation: fadeUp 0.6s ease both; }
+.hero h1      { animation: fadeUp 0.6s 0.1s ease both; }
+.hero-sub     { animation: fadeUp 0.6s 0.2s ease both; }
+.hero-buttons { animation: fadeUp 0.6s 0.3s ease both; }
+.hero-stats   { animation: fadeUp 0.6s 0.4s ease both; }

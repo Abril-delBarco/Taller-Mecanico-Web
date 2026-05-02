@@ -1,0 +1,23 @@
+:root {
+  --red: #e8001d;
+  --red-dark: #b8001a;
+  --black: #0a0a0a;
+  --dark: #111111;
+  --dark2: #1a1a1a;
+  --gray: #2a2a2a;
+  --gray-mid: #555;
+  --gray-light: #999;
+  --white: #ffffff;
+  --white-soft: #f0f0f0;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Barlow', sans-serif;
+  background: var(--black);
+  color: var(--white);
+  overflow-x: hidden;
+}
